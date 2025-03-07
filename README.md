@@ -24,8 +24,7 @@ Favourite **beverages**:
 
 [Trent's artwork](https://artfol.co/a/FEp2Oqu)
 
-![](https://www.reddit.com/media?url=https%3A%2F%2Fi.redd.it%2Fn7efpdxgzame1.gif)
-
+![](https://media-be.chewy.com/wp-content/uploads/2025/02/19151253/why-does-my-cat-groom-me.gif)
 
 
 A meme that captures how I currently feel about my university studies is ![](https://c.tenor.com/8druEACXtX8AAAAd/tenor.gif)
