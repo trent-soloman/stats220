@@ -10,13 +10,13 @@ A little about me:
 - I am taking STATS 220 because it provides foundation knowledge and skills for later papers.
 - I am interested in learning about the nature of stats220
 
-Favourite **music** artists
+***Favourite*** music artists
 
 1. Modest Mouse
 2. Placebo
 3. Silversun Pickups
 
-Favourite **beverages**:
+***Favourite*** beverages:
 
 * tea
 * fresh coconut water
