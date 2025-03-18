@@ -10,13 +10,13 @@ A little about me:
 - I am taking STATS 220 because it is part of a BSc, which will help me become a teacher.
 - I am interested in learning about the nature of stats220
 
-***Favourite*** music artists
+*Favourite* **MUSIC** artists
 
 1. Modest Mouse
 2. Placebo
 3. Silversun Pickups
 
-***Favourite*** beverages:
+*Favourite* **BEVERAGES**:
 
 * tea
 * fresh coconut water
