@@ -24,7 +24,10 @@ A little about me:
 
 [Trent's artwork](https://artfol.co/a/FEp2Oqu)
 
+Another cat animation:
 ![](https://media-be.chewy.com/wp-content/uploads/2025/02/19151253/why-does-my-cat-groom-me.gif)
 
 
-A meme that captures how I currently feel about my university studies is ![](https://c.tenor.com/8druEACXtX8AAAAd/tenor.gif)
+A meme that captures how I currently feel about my university studies is:
+
+![](https://c.tenor.com/8druEACXtX8AAAAd/tenor.gif)
