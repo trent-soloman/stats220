@@ -85,5 +85,5 @@ The mean mood rating for less than one day since medication is `r mean_one` out 
 
 Julian when he was 2 years old:
 
-![](kitten_julian.jpg)
+![kitten julian](kitten_julian.jpg)
 
