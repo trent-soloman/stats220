@@ -1,0 +1,89 @@
+---
+title: My dynamic report
+output: html_fragment
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo=FALSE, message=FALSE, warning=FALSE, error=FALSE)
+
+library(tidyverse)
+
+```
+
+```{css}
+
+body{
+    font-family: "Lucida Console", "Courier New", monospace;
+    background-color: #fff8e7
+}
+
+h2{
+  color: orange;
+  text-align: center;
+  padding: 20px;
+}
+
+p{
+  padding: 10px;
+}
+
+
+```
+
+## Observation of Cat Mood
+
+I have submitted through google forms, observations of whether my cat Julian expressed positive or negative emotion to determine if he is more often happy or sad and recorded his mood out of 10 to see if there is a correlation between his mood and days since taking his medication (he takes it once every 3 days). This has been plotted on a bar chart as a mean mood score for each day in the 3 day cycle.
+
+```{r}
+
+logged_data <- read_csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vSwBjioux_q1dS15AHcoeniQRP6CbTDLZGMeMO4rZjTU71gBBesvya-pUn5_gN0a4HulaksvKHK49HJ/pub?gid=2101783587&single=true&output=csv")
+              
+latest_data <- rename( logged_data,
+                        expression = 2,
+                        mood_one = 4,
+                        mood_two = 5,
+                        mood_three = 6
+                      )
+
+#means
+
+mean_one <- mean(latest_data$mood_one, na.rm = TRUE)%>%round(2)
+
+mean_two <- mean(latest_data$mood_two, na.rm = TRUE)%>%round(2)
+
+mean_three <- mean(latest_data$mood_three, na.rm = TRUE)%>%round(2)
+
+```
+
+The first bar graph shows there were `r nrow(latest_data)` raw observations of cat expression distributed across happy and sad, and he expressed he was happier more often than he was sad.
+
+``` {r}
+
+tibble_means <- tibble(
+  less_than = c("1 day", "2 days", "3 days"),  
+  means = c(mean_one, mean_two, mean_three)
+)
+
+ggplot(latest_data, aes(x = expression, fill = expression)) +
+  geom_bar(stat = "count") +
+  scale_fill_manual(values = c("purple", "salmon")) +
+  labs(title = "Raw Expressions", x = "Expression", y = "Count")
+
+ggplot(tibble_means, aes(x = less_than, y = means, fill = less_than)) +
+  geom_bar(stat = "identity") +
+  scale_fill_manual(values = c("purple", "cyan", "blue")) +
+  labs(
+    title = "Julian's Mood based on day since meds",
+    x = "Less than x days since medication",
+    y = "Mean mood out of 10"
+  )
+
+```
+
+
+The mean mood rating for less than one day since medication is `r mean_one` out of 10, less than two days is `r mean_two` out of 10, less than three days is `r mean_three` out of 10.
+
+Julian when he was 2 years old:
+
+![](kitten_julian.jpg)
+
